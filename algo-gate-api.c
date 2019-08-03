@@ -231,7 +231,8 @@ bool register_algo_gate( int algo, algo_gate_t *gate )
      case ALGO_XEVAN:        register_xevan_algo        ( gate ); break;
      case ALGO_YESCRYPT:     register_yescrypt_algo     ( gate ); break;
      case ALGO_YESCRYPTR8:   register_yescryptr8_algo   ( gate ); break;
-     case ALGO_YESCRYPTR16:  register_yescryptr16_algo  ( gate ); break;
+     case ALGO_YESCRYPTR16V2:register_yescryptr16v2_algo( gate ); break;
+     case ALGO_YESCRYPTR24:  register_yescryptr24_algo  ( gate ); break;
      case ALGO_YESCRYPTR32:  register_yescryptr32_algo  ( gate ); break;
      case ALGO_ZR5:          register_zr5_algo          ( gate ); break;
      case ALGO_YESPOWERR16:  register_yespowerr16_algo  ( gate ); break;       
@@ -296,7 +297,7 @@ const char* const algo_alias_map[][2] =
   { "argon2d-dyn",       "argon2d500"   },
   { "argon2d-uis",       "argon2d4096"  },
   { "bitcore",           "timetravel10" },
-  { "bitzeny",           "yescryptr8"   },
+  { "gltyescryptr8",     "yescryptr8"   },
   { "blake256r8",        "blakecoin"    },
   { "blake256r8vnl",     "vanilla"      },
   { "blake256r14",       "blake"        },
@@ -321,7 +322,9 @@ const char* const algo_alias_map[][2] =
   { "sib",               "x11gost"      },
   { "timetravel8",       "timetravel"   },
   { "ziftr",             "zr5"          },
-  { "yenten",            "yescryptr16"  },
+  { "gltyescryptr16",    "yescryptr16v2"},
+  { "gltyescryptr24",    "yescryptr24"  },
+  { "gltyescryptr32",    "yescryptr32"  },
   { "yescryptr8k",       "yescrypt"     },
   { "zcoin",             "lyra2z"       },
   { "zoin",              "lyra2z330"    },

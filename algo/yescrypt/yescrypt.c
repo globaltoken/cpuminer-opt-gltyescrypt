@@ -449,22 +449,34 @@ bool register_yescryptr8_algo( algo_gate_t* gate )
 {
    yescrypt_gate_base( gate );
    gate->get_max64  = (void*)&yescrypt_get_max64;
-   yescrypt_client_key = "Client Key";
-   yescrypt_client_key_len = 10;
+   yescrypt_client_key = NULL;
+   yescrypt_client_key_len = 0;
    YESCRYPT_N = 2048;
    YESCRYPT_R = 8;
    YESCRYPT_P = 1;
    return true;
 }
 
-bool register_yescryptr16_algo( algo_gate_t* gate )
+bool register_yescryptr16v2_algo( algo_gate_t* gate )
 {
    yescrypt_gate_base( gate );
    gate->get_max64  = (void*)&yescryptr16_get_max64;
-   yescrypt_client_key = "Client Key";
-   yescrypt_client_key_len = 10;
+   yescrypt_client_key = NULL;
+   yescrypt_client_key_len = 0;
    YESCRYPT_N = 4096;   
    YESCRYPT_R = 16;   
+   YESCRYPT_P = 4;   
+   return true;
+}
+
+bool register_yescryptr24_algo( algo_gate_t* gate )
+{
+   yescrypt_gate_base( gate );
+   gate->get_max64  = (void*)&yescryptr16_get_max64;
+   yescrypt_client_key = NULL;
+   yescrypt_client_key_len = 0;
+   YESCRYPT_N = 4096;   
+   YESCRYPT_R = 24;   
    YESCRYPT_P = 1;   
    return true;
 }
@@ -473,8 +485,8 @@ bool register_yescryptr32_algo( algo_gate_t* gate )
 {
    yescrypt_gate_base( gate );
    gate->get_max64  = (void*)&yescryptr16_get_max64;
-   yescrypt_client_key = "WaviBanana";
-   yescrypt_client_key_len = 10;
+   yescrypt_client_key = NULL;
+   yescrypt_client_key_len = 0;
    YESCRYPT_N = 4096;
    YESCRYPT_R = 32;
    YESCRYPT_P = 1;

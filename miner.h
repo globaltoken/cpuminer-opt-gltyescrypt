@@ -558,9 +558,10 @@ enum algos {
         ALGO_XEVAN,
         ALGO_YESCRYPT,
         ALGO_YESCRYPTR8,
-        ALGO_YESCRYPTR16,
+        ALGO_YESCRYPTR16V2,
+        ALGO_YESCRYPTR24,
         ALGO_YESCRYPTR32,
-	ALGO_YESPOWER,
+        ALGO_YESPOWER,
         ALGO_YESPOWERR16,
         ALGO_ZR5,
         ALGO_COUNT
@@ -642,10 +643,11 @@ static const char* const algo_names[] = {
         "xevan",
         "yescrypt",
         "yescryptr8",
-        "yescryptr16",
+        "yescryptr16v2",
+        "yescryptr24",
         "yescryptr32",
-	"yespower",
-	"yespowerr16",	
+        "yespower",
+        "yespowerr16",	
         "zr5",
         "\0"
 };
@@ -783,10 +785,11 @@ Options:\n\
                           x16s          Pigeoncoin (PGN)\n\
                           x17\n\
                           xevan         Bitsend (BSD)\n\
-                          yescrypt      Globlboost-Y (BSTY)\n\
-                          yescryptr8    BitZeny (ZNY)\n\
-                          yescryptr16   Yenten (YTN)\n\
-                          yescryptr32   WAVI\n\
+                          yescrypt      Globlboost-Y (BSTY) & GlobalToken (GLT)\n\
+                          yescryptr8    GlobalToken (GLT)\n\
+                          yescryptr16v2 GlobalToken (GLT)\n\
+                          yescryptr24   GlobalToken (GLT)\n\
+                          yescryptr32   GlobalToken (GLT)\n\
                           zr5           Ziftr\n\
   -o, --url=URL         URL of mining server\n\
   -O, --userpass=U:P    username:password pair for mining server\n\
