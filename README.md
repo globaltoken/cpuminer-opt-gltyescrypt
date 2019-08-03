@@ -1,8 +1,6 @@
 Ready automatically switches to the new algorithm Yenten Coin
 ---------
 
-*Algorithm:  YescryptR16 (will be changed to YespowerR16(yespower-1.0,N=4096,r=16) on and after 30 March 2019*
-
 **Recommended POOLS:**
 
 http://cpu-pool.com 
@@ -150,10 +148,11 @@ Supported Algorithms
                           x16s          pigeoncoin (PGN)
                           x17
                           xevan         Bitsend (BSD)
-                          yescrypt      Globalboost-Y (BSTY)
-                          yescryptr8    BitZeny (ZNY)
-                          yescryptr16   Yenten (YTN)
-                          yescryptr32   WAVI
+                          yescrypt      Globlboost-Y (BSTY) & GlobalToken (GLT)
+                          yescryptr8    GlobalToken (GLT)
+                          yescryptr16v2 GlobalToken (GLT)
+                          yescryptr24   GlobalToken (GLT)
+                          yescryptr32   GlobalToken (GLT)
                           yespower      Cranepay
                           yespowerr16   Yenten                          
                           zr5           Ziftr
