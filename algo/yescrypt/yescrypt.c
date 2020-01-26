@@ -451,9 +451,9 @@ bool register_yescryptr8_algo( algo_gate_t* gate )
    gate->get_max64  = (void*)&yescrypt_get_max64;
    yescrypt_client_key = NULL;
    yescrypt_client_key_len = 0;
-   YESCRYPT_N = 2048;
+   YESCRYPT_N = 8192;
    YESCRYPT_R = 8;
-   YESCRYPT_P = 1;
+   YESCRYPT_P = 2;
    return true;
 }
 
